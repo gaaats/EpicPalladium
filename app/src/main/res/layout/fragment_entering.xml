@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backckc"
+    android:layout_height="match_parent"
+    tools:context=".EnteringFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hor_95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hor_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vert_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vert_95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hor_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+
+    <ImageView
+        android:id="@+id/img_titple_game"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/slot_mach"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_hor_95"
+        app:layout_constraintDimensionRatio="1,1"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vert_95"
+        app:layout_constraintStart_toStartOf="@id/guideline_vert_05"
+        app:layout_constraintTop_toTopOf="@id/guideline_hor_05" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_fortune_machine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="29sp"
+        android:fontFamily="@font/montserrat_black"
+        android:gravity="center"
+        android:lines="1"
+        android:layout_marginBottom="8dp"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textColor="@color/dddddddd"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vert_95"
+        app:layout_constraintStart_toStartOf="@id/guideline_vert_05"
+        app:layout_constraintBottom_toTopOf="@id/img_titple_game" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_play_game"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_black"
+        android:text="play game"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vert_95"
+        app:layout_constraintStart_toStartOf="@id/guideline_vert_05"
+        app:layout_constraintTop_toBottomOf="@id/img_titple_game"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+
+    <ImageView
+        android:id="@+id/btn_img_reit_list"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:alpha="0.9"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/podium"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_hor_95"
+        app:layout_constraintDimensionRatio="1,1"
+        app:layout_constraintStart_toStartOf="@id/guideline_vert_05"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vert_95" />
+
+    <ImageView
+        android:id="@+id/btn_img_info"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:alpha="0.9"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/book__"
+        app:layout_constraintTop_toTopOf="@id/guideline_hor_05"
+        app:layout_constraintDimensionRatio="1,1"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vert_95" />
+
+
+    <TextView
+        android:id="@+id/tv_dovn_text_raitlist_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:fontFamily="@font/montserrat_black"
+        android:text="@string/drgtdfrgtgtapp_name_author"
+        android:textAllCaps="true"
+        android:textColor="@color/dddddddd"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_hor_95" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

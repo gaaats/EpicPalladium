@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nnnaaavvviigggaattor"
+    app:startDestination="@id/enteringFragment">
+
+    <fragment
+        android:id="@+id/oneeeeFragment"
+        android:name="com.ngelgames.h.gogogogo.OneeeeFragment"
+        android:label="fragment_oneeee"
+        tools:layout="@layout/fragment_oneeee" >
+        <action
+            android:id="@+id/action_oneeeeFragment_to_tvvvvvoooFragment"
+            app:enterAnim="@anim/onesignal_fade_in"
+            app:launchSingleTop="true"
+            app:exitAnim="@anim/onesignal_fade_out"
+            app:popEnterAnim="@anim/onesignal_fade_in"
+            app:popExitAnim="@anim/onesignal_fade_out"
+            app:destination="@id/tvvvvvoooFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvvvvvoooFragment"
+        android:name="com.ngelgames.h.gogogogo.TvvvvvoooFragment"
+        android:label="fragment_tvvvvvooo"
+        tools:layout="@layout/fragment_tvvvvvooo" >
+        <action
+            android:id="@+id/action_tvvvvvoooFragment_to_oneeeeFragment"
+            app:destination="@id/oneeeeFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/enteringFragment"
+        android:name="com.ngelgames.h.EnteringFragment"
+        android:label="fragment_entering"
+        tools:layout="@layout/fragment_entering" >
+        <action
+            android:id="@+id/action_enteringFragment_to_oneeeeFragment"
+            app:enterAnim="@anim/onesignal_fade_in"
+            app:launchSingleTop="true"
+            app:exitAnim="@anim/onesignal_fade_out"
+            app:popEnterAnim="@anim/onesignal_fade_in"
+            app:popExitAnim="@anim/onesignal_fade_out"
+            app:destination="@id/oneeeeFragment" />
+        <action
+            android:id="@+id/action_enteringFragment_to_leadersFragment"
+            app:enterAnim="@anim/onesignal_fade_in"
+            app:launchSingleTop="true"
+            app:exitAnim="@anim/onesignal_fade_out"
+            app:popEnterAnim="@anim/onesignal_fade_in"
+            app:popExitAnim="@anim/onesignal_fade_out"
+            app:destination="@id/leadersFragment" />
+        <action
+            android:id="@+id/action_enteringFragment_to_infoFragment"
+            app:enterAnim="@anim/onesignal_fade_in"
+            app:launchSingleTop="true"
+            app:exitAnim="@anim/onesignal_fade_out"
+            app:popEnterAnim="@anim/onesignal_fade_in"
+            app:popExitAnim="@anim/onesignal_fade_out"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/leadersFragment"
+        android:name="com.ngelgames.h.LeadersFragment"
+        android:label="fragment_leaders"
+        tools:layout="@layout/fragment_leaders" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.ngelgames.h.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+</navigation>

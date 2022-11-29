@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.88"
+    android:background="@drawable/backckc"
+    tools:context=".gogogogo.TvvvvvoooFragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/frgthy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ftgyhy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ftgythy20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hor_95ergty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rfrgtgyhy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/thththt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/thyhuju"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintDimensionRatio="1,2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/thththt"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/vin" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ftgyhyju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/montserrat_black"
+        android:text="try again"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/erfrftgee"
+        app:layout_constraintTop_toBottomOf="@id/thyhuju" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/erfrftgee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/montserrat_black"
+        android:text="exit"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ftgyhyju"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/thyhuju" />
+
+
+
+    <TextView
+        android:id="@+id/ertygthyj"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:background="@color/black"
+        android:fontFamily="@font/montserrat_black"
+        android:padding="2dp"
+        android:text="Prefect game"
+        android:textAllCaps="true"
+        android:textColor="@color/dddddddd"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/frgthy"
+        app:layout_constraintEnd_toEndOf="@+id/ftgyhy"
+        app:layout_constraintBottom_toTopOf="@+id/thyhuju"/>
+
+    <TextView
+        android:id="@+id/dedrfggt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/drgtdfrgtgtapp_name_author"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_hor_95ergty" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
